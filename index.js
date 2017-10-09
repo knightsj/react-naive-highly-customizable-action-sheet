@@ -129,9 +129,6 @@ export default class ActionSheet extends Component {
 
     componentWillMount() {
 
-       if (Platform.OS === 'android') {
-           BackHandler.addEventListener('hardwareBackPress', this.onBackAndroid);
-       }
 
         //Calculate Items height
         if (!this.props.itemTitles){
@@ -232,12 +229,26 @@ export default class ActionSheet extends Component {
 
     }
 
+    componentDidMount() {
+        if (Platform.OS === 'android') {
+            BackHandler.addEventListener('hardwareBackPress', ()=>{
+
+                if(this.state.hide){
+                    return false;
+                }else {
+                    this._dismiss();
+                    return true;
+                }
+
+            });
+        }
+    }
 
 
     componentWillUnmount() {
         this.chooseTimer && clearTimeout(this.chooseTimer);
         if (Platform.OS === 'android') {
-            BackHandler.removeEventListener('hardwareBackPress', this._onBackAndroid);
+            BackHandler.removeEventListener('hardwareBackPress', ()=>{});
         }
     }
 
@@ -454,10 +465,6 @@ export default class ActionSheet extends Component {
         if (this.state.hide) {
             this.setState({hide: false}, this._appear);
         }
-    }
-
-    _onBackAndroid(){
-        this._dismiss();
     }
 }
 

@@ -37,7 +37,7 @@ A  highly customizable ActionSheet component which can be used in iOS and Androi
 
 ## Installation
 
-``npm install react-naive-highly-customizable-action-sheet —save``
+``npm install react-naive-highly-customizable-action-sheet``
 
 
 
@@ -47,7 +47,9 @@ A  highly customizable ActionSheet component which can be used in iOS and Androi
 
 #### 1. Import component
 
-`import Checkbox from 'react-native-custom-checkbox';`
+```
+import ActionSheet from 'react-naive-highly-customizable-action-sheet'
+```
 
 
 
@@ -55,7 +57,7 @@ A  highly customizable ActionSheet component which can be used in iOS and Androi
 
 
 
-example 1:
+Example 1:
 
 ```jsx
 <ActionSheet
@@ -91,7 +93,7 @@ clickedByEmail(){
 
 
 
-example2:
+Example2:
 
 ```jsx
  <ActionSheet
