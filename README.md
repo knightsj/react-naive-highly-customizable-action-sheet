@@ -1,4 +1,10 @@
 # react-naive-highly-customizable-action-sheet
+
+![](https://img.shields.io/badge/build-success-brightgreen.svg)
+![](https://img.shields.io/badge/platform-iOS-30A3FC.svg)
+![](https://img.shields.io/badge/platform-Android-8FC550.svg)
+[![](https://img.shields.io/badge/License-MIT-ff69b4.svg)](https://github.com/knightsj/react-naive-highly-customizable-action-sheet/blob/master/LICENSE)
+
 A  highly customizable ActionSheet component which can be used in iOS and Android platform.
 
 
@@ -7,7 +13,8 @@ A  highly customizable ActionSheet component which can be used in iOS and Androi
 
 
 
-
+Introduction Blog in Chinese:[简书：结合一个开源的底部弹出菜单组件来讲一下如何封装一个React Native组件
+](http://www.jianshu.com/p/9f4b359dddcc)
 
 #### default style：
 
@@ -197,3 +204,4 @@ Example2:
 ## License
 
 All source code is licensed under the [MIT License](https://github.com/knightsj/react-naive-highly-customizable-action-sheet/blob/master/LICENSE).
+
