@@ -129,6 +129,19 @@ export default class ActionSheet extends Component {
 
     componentWillMount() {
 
+        //Cancel for Android
+        if (Platform.OS === 'android') {
+            BackHandler.addEventListener('hardwareBackPress', ()=>{
+
+                if(this.state.hide){
+                    return false;
+                }else {
+                    this._dismiss();
+                    return true;
+                }
+
+            });
+        }
 
         //Calculate Items height
         if (!this.props.itemTitles){
@@ -229,20 +242,7 @@ export default class ActionSheet extends Component {
 
     }
 
-    componentDidMount() {
-        if (Platform.OS === 'android') {
-            BackHandler.addEventListener('hardwareBackPress', ()=>{
-
-                if(this.state.hide){
-                    return false;
-                }else {
-                    this._dismiss();
-                    return true;
-                }
-
-            });
-        }
-    }
+ 
 
 
     componentWillUnmount() {
