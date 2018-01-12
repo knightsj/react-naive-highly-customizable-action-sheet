@@ -13,8 +13,8 @@ A  highly customizable ActionSheet component which can be used in iOS and Androi
 
 
 
-Introduction Blog in Chinese:[简书：结合一个开源的底部弹出菜单组件来讲一下如何封装一个React Native组件
-](http://www.jianshu.com/p/9f4b359dddcc)
+Introduction Blog in Chinese:[掘金：结合一个开源的底部弹出菜单组件来讲一下如何封装一个React Native组件
+](https://juejin.im/post/59dc5a86f265da431875b3ce)
 
 #### default style：
 
